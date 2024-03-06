@@ -24,6 +24,35 @@ body {
 /* 個別設定 */
 header {
   width: 100%;
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+
+    .header-resume {
+      background-color: #384151;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 5px 30px;
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+      }
+    }
+  }
 }
 
 .hero {
