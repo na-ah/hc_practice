@@ -109,8 +109,24 @@ header {
 
 .profile {
   margin-bottom: 90px;
+
   .profile-wrapper {
     display: flex;
+    gap: 20px;
+
+    div {
+      text-align: center;
+
+      h3 {
+        font-weight: bold;
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+    }
   }
 }
 
