@@ -137,4 +137,8 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  /* 共通設定 */
+  .container {
+    width: 100%;
+  }
 }
