@@ -132,4 +132,6 @@ header {
 
 footer {
   text-align: center;
+  font-size: 12px;
+  border-bottom: 1px solid black;
 }
