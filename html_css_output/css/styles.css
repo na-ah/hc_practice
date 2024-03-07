@@ -16,10 +16,46 @@ img {
 }
 
 header {
-  background-color: azure;
+  .header-normal {
+    display: flex;
+    justify-content: space-between;
+  }
 
-  .container {
-    background-color: bisque;
+  .header-normal-logo {
+    width: 140px;
+    display: flex;
+    align-items: center;
+
+    p {
+      width: 100%;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .header-normal-button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  .header-normal-button-user img {
+    border-radius: 50%;
+  }
+
+  .header-normal-button-post {
+    background-color: #1083fd;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px 10px;
   }
 }
 
