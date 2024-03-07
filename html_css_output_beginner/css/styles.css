@@ -87,7 +87,7 @@ header {
 
   .introduce-content {
     font-size: 17px;
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-flow: column;
 
@@ -99,7 +99,7 @@ header {
   }
 
   .introduce-image {
-    width: 15%;
+    width: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
