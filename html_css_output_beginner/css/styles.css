@@ -159,4 +159,22 @@ footer {
       }
     }
   }
+
+  .introduce {
+    .introduce-wrapper {
+      flex-flow: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .introduce-content {
+      width: 100%;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    .introduce-image {
+      width: 40%;
+    }
+  }
 }
