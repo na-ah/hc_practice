@@ -177,4 +177,20 @@ footer {
       width: 40%;
     }
   }
+
+  .profile {
+    .profile-wrapper {
+      flex-flow: column;
+
+      div {
+        h3 {
+          font-size: 15px;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
 }
