@@ -6,6 +6,10 @@ body {
     sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* 共通設定 */
 .heading {
   text-align: center;
@@ -102,7 +106,6 @@ header {
 
     img {
       border-radius: 50%;
-      max-width: 100%;
     }
   }
 }
@@ -142,6 +145,7 @@ footer {
     width: 100%;
   }
 
+  /* 個別設定 */
   header {
     .header-wrapper {
       .header-resume {
