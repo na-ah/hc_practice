@@ -373,7 +373,7 @@ main {
 
 .main-content-discussion {
   background-color: white;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
 
   h2 {
     font-size: 30px;
@@ -440,15 +440,73 @@ main {
       width: 20px;
     }
   }
-}
-
-.main-content-discussion-comment-announce {
-  position: absolute;
-  top: calc(100% + 20px);
+  .main-content-discussion-comment-announce {
+    position: absolute;
+    top: calc(100% + 20px);
+  }
 }
 
 .main-content-readnext {
   background-color: #edf2f7;
+
+  .main-content-readnext-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 750px;
+    background-color: #0f83fd;
+    margin: 0 auto;
+  }
+
+  .main-content-readnext-article {
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+
+    h3 {
+      padding: 0 0 10px;
+      margin: 0;
+      border-bottom: none;
+    }
+
+    p {
+      padding: 0;
+    }
+  }
+
+  .main-content-readnext-article-left {
+    width: 15%;
+
+    img {
+      background-color: white;
+      border-radius: 15px;
+    }
+  }
+
+  .main-content-readnext-article-right {
+    width: 85%;
+  }
+
+  .main-content-readnext-article-right-author {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .main-content-readnext-article-right-author-image {
+    img {
+      width: 30px;
+    }
+  }
+
+  .main-content-readnext-article-right-author-info {
+    p {
+      padding: 0;
+      margin: 0;
+      line-height: 1.3;
+      font-size: 14px;
+    }
+  }
 }
 
 .main-sidebar {
