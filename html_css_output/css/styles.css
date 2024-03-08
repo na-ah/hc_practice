@@ -135,6 +135,7 @@ header {
 }
 
 main {
+  background-color: #edf2f7;
   width: 100%;
   border: 10px solid lightgray;
   display: flex;
@@ -192,7 +193,9 @@ main {
 }
 
 .main-content-article {
+  background-color: white;
   padding: 20px;
+  margin-bottom: 60px;
 
   .main-content-article-tag {
     display: flex;
@@ -369,13 +372,83 @@ main {
 }
 
 .main-content-discussion {
-  background-color: green;
-  height: 500px;
+  background-color: white;
+  margin-bottom: 10px;
+
+  h2 {
+    font-size: 30px;
+    border-bottom: none;
+    text-align: center;
+  }
+
+  .main-content-discussion-image {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 350px;
+      margin-bottom: 60px;
+    }
+  }
+
+  .main-content-discussion-comment {
+    padding: 0 20px 30px;
+    position: relative;
+  }
+
+  .main-content-discussion-comment-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+
+    p:last-child {
+      margin-left: auto;
+      color: gray;
+      text-decoration: underline solid gray;
+    }
+
+    p a {
+      padding: 10px 15px;
+      background-color: #ecf5ff;
+      color: #3ea8ff;
+      font-weight: bold;
+      border-radius: 30px;
+    }
+
+    img {
+      width: 50px;
+      border-radius: 50%;
+    }
+  }
+
+  .main-content-discussion-comment-form {
+    padding: 0 15px;
+    color: gray;
+  }
+
+  .main-content-discussion-comment-footer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: gray;
+
+    a:last-child {
+      margin-left: auto;
+    }
+
+    img {
+      width: 20px;
+    }
+  }
+}
+
+.main-content-discussion-comment-announce {
+  position: absolute;
+  top: calc(100% + 20px);
 }
 
 .main-content-readnext {
-  background-color: lightseagreen;
-  height: 500px;
+  background-color: #edf2f7;
 }
 
 .main-sidebar {
