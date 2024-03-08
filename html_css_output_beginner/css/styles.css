@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+/* 全体設定 */
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo,
+    sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* 共通設定 */
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+
+  h2 {
+    display: inline-block;
+    border-bottom: 1px solid black;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* 個別設定 */
+header {
+  width: 100%;
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  .header-resume {
+    background-color: #384151;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px 30px;
+
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+  }
+}
+
+.hero {
+  margin-bottom: 90px;
+
+  img {
+    display: block;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.introduce {
+  margin-bottom: 90px;
+
+  .introduce-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 45px;
+  }
+
+  .introduce-content {
+    font-size: 17px;
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  }
+
+  .introduce-image {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+}
+
+.profile {
+  margin-bottom: 90px;
+
+  .profile-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+
+  div {
+    text-align: center;
+
+    h3 {
+      font-weight: bold;
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 600px) {
+  /* 共通設定 */
+  .container {
+    width: 100%;
+  }
+
+  /* 個別設定 */
+  header {
+    .header-resume {
+      padding: 5px 10px;
+
+      h1 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+
+    nav {
+      ul {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .introduce {
+    .introduce-wrapper {
+      flex-flow: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .introduce-content {
+      width: 100%;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    .introduce-image {
+      width: 40%;
+    }
+  }
+
+  .profile {
+    .profile-wrapper {
+      flex-flow: column;
+    }
+
+    div {
+      h3 {
+        font-size: 15px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+
+  footer {
+    border-bottom: 5px solid black;
+  }
+}
