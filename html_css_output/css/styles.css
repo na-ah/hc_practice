@@ -134,11 +134,14 @@ header {
   top: 80px;
 }
 
+.sidebar-wrapper {
+  display: flex;
+}
+
 main {
   background-color: #edf2f7;
   width: 100%;
   border: 10px solid lightgray;
-  display: flex;
   justify-content: space-between;
 
   /* 共通設定 */
