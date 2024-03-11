@@ -69,7 +69,7 @@ header {
     gap: 15px;
 
     img {
-      width: 50px;
+      width: 40px;
     }
   }
 
@@ -954,5 +954,11 @@ footer {
         margin-bottom: 30px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-normal-button-post {
+    display: none;
   }
 }
