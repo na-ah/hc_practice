@@ -34,7 +34,6 @@ hr {
 .container {
   width: 95%;
   max-width: 1400px;
-  border: 10px solid green;
   margin: 0 auto;
 }
 
@@ -113,10 +112,10 @@ header {
 }
 
 .main-wrapper {
-  border: 5px solid red;
   display: flex;
   justify-content: space-between;
   position: relative;
+  background-color: #edf2f7;
 }
 
 .social {
@@ -125,7 +124,6 @@ header {
   width: 80px;
   height: 100%;
   margin-right: auto;
-  border: 5px solid yellow;
 
   .social-btn {
     position: sticky;
@@ -186,16 +184,11 @@ header {
   }
 }
 
-.sidebar-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
 main {
-  background-color: #edf2f7;
+  display: flex;
+  justify-content: space-around;
   width: 100%;
-  border: 10px solid lightgray;
-  justify-content: space-between;
+  justify-content: space-around;
 
   /* 共通設定 */
   h2 {
@@ -244,8 +237,6 @@ main {
 }
 
 .main-content {
-  border: 5px solid blue;
-  width: 65%;
 }
 
 .main-content-article {
@@ -503,8 +494,8 @@ main {
 }
 
 .main-sidebar {
-  width: 30%;
-  border: 5px solid red;
+  margin-left: 30px;
+  min-width: 320px;
 
   .main-sidebar-profile {
     padding: 20px;
@@ -537,7 +528,8 @@ main {
     gap: 8px;
 
     p {
-      padding: 0;
+      padding: 0px;
+      font-size: 20px;
     }
   }
 
@@ -693,9 +685,6 @@ main {
 }
 
 footer {
-  height: 1300px;
-  border: 5px solid pink;
-
   .footer-wrapper {
     display: flex;
     justify-content: space-between;
@@ -746,17 +735,15 @@ footer {
   }
 }
 
+/* レスポンシブ対応 */
+
 @media screen and (max-width: 1600px) {
   .social {
     display: none;
   }
 }
 
-@media screen and (max-width: 960px) {
-  .additional-header-wrapper {
-    border: 10px solid yellow;
-  }
-
+@media screen and (max-width: 1240px) {
   .additional-header {
     background-color: white;
     display: block;
