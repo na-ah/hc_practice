@@ -531,8 +531,10 @@ main {
   }
 
   .main-sidebar-profile-upper-right {
-    padding-left: 10px;
     width: 60%;
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
 
     p {
       padding: 0;
