@@ -705,11 +705,126 @@ footer {
   }
 
   .additional-header {
+    background-color: white;
     display: block;
-    background-color: chocolate;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+
+    .additional-header-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .additional-header-left-image {
+      img {
+        width: 50px;
+        border-radius: 50%;
+      }
+    }
+
+    .additional-header-left-title {
+      p {
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+
+    .additional-header-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .additional-header-right-index {
+      padding: 5px 10px;
+      position: relative;
+
+      #popup {
+        display: none;
+      }
+
+      .popup-open {
+        cursor: pointer;
+      }
+
+      .popup-window {
+        display: none;
+      }
+
+      #popup:checked ~ .popup-window {
+        display: block;
+        z-index: 100;
+      }
+
+      .popup-window {
+        position: absolute;
+        padding: 20px;
+        top: 50px;
+        right: -30px;
+        width: 400px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        color: gray;
+
+        ul {
+          margin-top: 20px;
+          padding: 5px 0;
+        }
+
+        li {
+          margin-bottom: 10px;
+          margin-left: 30px;
+        }
+
+        li.active {
+          color: black;
+          font-weight: bold;
+        }
+
+        li.active::before {
+          content: "";
+          background-color: #0f83fd;
+          width: 15px;
+          height: 15px;
+          border: 3px solid #badaff;
+          position: absolute;
+          left: 17px;
+        }
+
+        li::before {
+          content: "";
+          background-color: #badaff;
+          width: 7px;
+          height: 7px;
+          position: absolute;
+          left: 20.5px;
+          margin-top: 6px;
+          border-radius: 50%;
+          border: 2px solid white;
+        }
+
+        ul::before {
+          content: "";
+          background-color: #badaff;
+          width: 2px;
+          height: 35%;
+          position: absolute;
+          top: 78px;
+          left: 23px;
+        }
+      }
+    }
+
+    .additional-header-right-good {
+      padding: 10px 10px;
+      background-color: #ecf5ff;
+      border-radius: 50%;
+    }
   }
 
   .main-sidebar {
