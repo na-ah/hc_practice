@@ -276,6 +276,30 @@ main {
     border-radius: 15px;
   }
 
+  #accordion {
+    display: none;
+  }
+
+  .accordion-window {
+    display: none;
+  }
+
+  .accordion-open {
+    cursor: pointer;
+  }
+
+  #accordion:checked ~ .accordion-window {
+    display: block;
+    z-index: 10;
+  }
+
+  #accordion:checked ~ .sub-content-upper .accordion-open {
+    h4 span {
+      display: inline-block;
+      transform: rotate(180deg);
+    }
+  }
+
   .sub-content-upper {
     padding: 0 10px;
     border: 2px solid gainsboro;

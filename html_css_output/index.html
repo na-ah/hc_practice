@@ -91,10 +91,13 @@
                   <img src="images/006-editor.png" alt="エディターの画像">
                   <p>ブラウザ上で動くエディターです。Zennにログインした状態で使用します。</p>
                   <div class="sub-content">
+                    <input type="checkbox" id="accordion">
                     <div class="sub-content-upper">
-                      <h4>▼ショートカットを使用しよう</h4>
+                      <label class="accordion-open" for="accordion">
+                        <h4><span>▼</span>ショートカットを使用しよう</h4>
+                      </label>
                     </div>
-                    <div class="sub-content-lower">
+                    <div class="sub-content-lower accordion-window">
                       <p>オンラインのmarkdownエディターでは、以下のショートカットを使用できます。</p>
                       <ul>
                         <li><strong>Ctrl + P
