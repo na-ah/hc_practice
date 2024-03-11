@@ -125,14 +125,65 @@ header {
   width: 80px;
   height: 100%;
   margin-right: auto;
-  background-color: blueviolet;
   border: 5px solid yellow;
-}
 
-.social-btn {
-  background-color: brown;
-  position: sticky;
-  top: 80px;
+  .social-btn {
+    position: sticky;
+    top: 80px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .social-btn-good {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    p {
+      font-size: 16px;
+      color: gray;
+    }
+  }
+
+  .social-btn-good-image {
+    p {
+      font-size: 30px;
+      background-color: white;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+  }
+
+  .social-btn-list {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .social-btn-list-x {
+    width: 30px;
+  }
+
+  .social-btn-list-facebook {
+    width: 40px;
+  }
 }
 
 .sidebar-wrapper {
