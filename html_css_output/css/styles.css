@@ -507,29 +507,42 @@ main {
     gap: 10px;
     margin-bottom: 30px;
 
-    p:last-child {
-      margin-left: auto;
-      color: gray;
-      text-decoration: underline solid gray;
+    img {
+      width: 50px;
+      border-radius: 50%;
     }
-
-    p a {
+  }
+  .main-content-discussion-comment-btn {
+    display: flex;
+    gap: 20px;
+    a {
       padding: 10px 15px;
       background-color: #ecf5ff;
       color: #3ea8ff;
       font-weight: bold;
       border-radius: 30px;
     }
+  }
 
-    img {
-      width: 50px;
-      border-radius: 50%;
+  .main-content-discussion-comment-guide {
+    margin-left: auto;
+    color: gray;
+    text-decoration: underline solid gray;
+
+    span {
+      display: inline-block;
+      rotate: -45deg;
     }
   }
 
   .main-content-discussion-comment-form {
     padding: 0 15px;
     color: gray;
+
+    textarea {
+      width: 100%;
+      height: 200px;
+    }
   }
 
   .main-content-discussion-comment-footer {
@@ -1013,5 +1026,30 @@ footer {
 @media screen and (max-width: 600px) {
   .header-normal-button-post {
     display: none;
+  }
+
+  .main-content-discussion-comment-guide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .additional-header {
+    .additional-header-right-index {
+      .popup-window {
+        max-width: 90vw;
+        right: -60px;
+      }
+    }
+  }
+}
+
+/* フォームとタグのボタンを横並びから縦並びに */
+@media screen and (max-width: 330px) {
+  .main-content-discussion-comment-btn {
+    flex-flow: column;
+  }
+  .main-content-article-tag {
+    flex-flow: column;
   }
 }
