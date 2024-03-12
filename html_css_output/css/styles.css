@@ -300,10 +300,14 @@ main {
     }
   }
 
+  #accordion:checked ~ .sub-content-upper {
+    border-radius: 15px 15px 0 0;
+  }
+
   .sub-content-upper {
     padding: 0 10px;
     border: 2px solid gainsboro;
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 15px 15px;
   }
 
   .sub-content-lower {
