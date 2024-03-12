@@ -405,6 +405,22 @@ main {
     }
   }
 
+  .main-content-article-bottom-social-button-v {
+    position: relative;
+  }
+
+  .main-content-article-bottom-social-button-v::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+    position: absolute;
+    rotate: 45deg;
+    top: -10px;
+    left: -10px;
+  }
+
   /* 記事内プロフィール */
   .main-content-article-profile {
     padding: 20px 0;
@@ -530,9 +546,23 @@ main {
       width: 20px;
     }
   }
+
+  .main-content-discussion-comment-footer-submit {
+    background-color: #3ea8ff;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
   .main-content-discussion-comment-announce {
     position: absolute;
     top: calc(100% + 20px);
+    color: gray;
+
+    span {
+      text-decoration: 1px underline gray;
+      text-underline-offset: 4px;
+    }
   }
 }
 
