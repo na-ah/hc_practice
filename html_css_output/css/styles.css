@@ -41,7 +41,54 @@ img {
   max-width: 100%;
 }
 
+main {
+  h2 {
+    padding: 50px 0 8px;
+    border-bottom: 1px solid #edf2f7;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    padding: 30px 0 8px;
+    border-bottom: 1px solid #edf2f7;
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    padding: 10px 0;
+  }
+
+  p {
+    padding: 5px 0;
+  }
+
+  i {
+    background-color: #edf2f7;
+    padding: 3px 8px;
+    margin: 0 2px;
+    border-radius: 7px;
+  }
+
+  strong {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 8px;
+  }
+
+  ul {
+    list-style: disc;
+
+    li {
+      margin-left: 30px;
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+  }
+}
+
 /* 個別設定 */
+
+/* header */
 header {
   .header-normal {
     display: flex;
@@ -86,10 +133,12 @@ header {
   }
 }
 
+/* 通常時はモバイル用のヘッダーを隠す */
 .additional-header {
   display: none;
 }
 
+/* ヒーロー */
 .hero {
   background-color: #edf2f7;
   padding: 180px 0;
@@ -111,6 +160,9 @@ header {
   }
 }
 
+/* main-wrapper */
+/* 左のソーシャルサイドバーとメインのコンテナを並べるためのフレックスコンテナ */
+/* メインのコンテナは中央揃えだが、左のソーシャルサイドバーはコンテナの左にはみ出す */
 .main-wrapper {
   display: flex;
   justify-content: space-between;
@@ -118,6 +170,8 @@ header {
   background-color: #edf2f7;
 }
 
+/* 左のソーシャルサイドバー */
+/* .socialがソーシャルサイドバーの動く範囲を決める */
 .social {
   position: absolute;
   right: calc(50% + 720px);
@@ -184,61 +238,16 @@ header {
   }
 }
 
+/* メイン */
+/* main-contentとmain-sidebarのフレックスコンテナ */
 main {
   display: flex;
   justify-content: space-around;
   width: 100%;
   justify-content: space-around;
-
-  /* 共通設定 */
-  h2 {
-    padding: 50px 0 8px;
-    border-bottom: 1px solid #edf2f7;
-    margin-bottom: 30px;
-  }
-
-  h3 {
-    padding: 30px 0 8px;
-    border-bottom: 1px solid #edf2f7;
-    margin-bottom: 20px;
-  }
-
-  h4 {
-    padding: 10px 0;
-  }
-
-  p {
-    padding: 5px 0;
-  }
-
-  i {
-    background-color: #edf2f7;
-    padding: 3px 8px;
-    margin: 0 2px;
-    border-radius: 7px;
-  }
-
-  strong {
-    font-weight: bold;
-    font-size: 18px;
-    margin-right: 8px;
-  }
-
-  ul {
-    list-style: disc;
-
-    li {
-      margin-left: 30px;
-      font-size: 18px;
-      margin-bottom: 12px;
-    }
-  }
-  /* ここまで */
 }
 
-.main-content {
-}
-
+/* メイン記事 */
 .main-content-article {
   background-color: white;
   padding: 20px;
@@ -271,6 +280,7 @@ main {
     }
   }
 
+  /* アコーディオン */
   .sub-content {
     margin: 10px 0;
     border-radius: 15px;
@@ -317,6 +327,7 @@ main {
     border-top: none;
   }
 
+  /* 記事へのリンク */
   .main-content-article-postlink {
     padding: 30px 0;
 
@@ -327,6 +338,7 @@ main {
     }
   }
 
+  /* 編集を提案ボタン */
   .main-content-article-bottom-tag {
     display: flex;
     margin-bottom: 30px;
@@ -352,6 +364,7 @@ main {
     }
   }
 
+  /* 記事内ソーシャルボタン */
   .main-content-article-bottom-social {
     display: flex;
     justify-content: space-between;
@@ -392,6 +405,7 @@ main {
     }
   }
 
+  /* 記事内プロフィール */
   .main-content-article-profile {
     padding: 20px 0;
     display: flex;
@@ -446,6 +460,7 @@ main {
   }
 }
 
+/* discussion */
 .main-content-discussion {
   background-color: white;
   margin-bottom: 100px;
@@ -521,6 +536,8 @@ main {
   }
 }
 
+/* 右側のサイドバー */
+/* .main-sidebarがサイドバーの動く範囲を決める */
 .main-sidebar {
   margin-left: 30px;
   min-width: 320px;
@@ -647,6 +664,7 @@ main {
   }
 }
 
+/* Readnext */
 .main-content-readnext {
   background-color: #edf2f7;
 
@@ -712,6 +730,7 @@ main {
   }
 }
 
+/* footer */
 footer {
   .footer-wrapper {
     display: flex;
@@ -765,12 +784,16 @@ footer {
 
 /* レスポンシブ対応 */
 
+/* 左のソーシャルサイドバーを隠す */
 @media screen and (max-width: 1600px) {
   .social {
     display: none;
   }
 }
 
+/* モバイル用のヘッダーを表示 */
+/* 右のサイドバーを隠す */
+/* footerのロゴを上部に移動 */
 @media screen and (max-width: 1240px) {
   .additional-header {
     background-color: white;
@@ -923,6 +946,7 @@ footer {
   }
 }
 
+/* ReadNextを2列から1列に */
 @media screen and (max-width: 800px) {
   .main-content-readnext {
     .main-content-readnext-wrapper {
@@ -943,12 +967,6 @@ footer {
   }
 
   footer {
-    .footer-wrapper {
-    }
-
-    .footer-title {
-    }
-
     .footer-content {
       gap: 0;
       flex-wrap: wrap;
@@ -961,6 +979,7 @@ footer {
   }
 }
 
+/* 右上の投稿ボタンを非表示に */
 @media screen and (max-width: 600px) {
   .header-normal-button-post {
     display: none;
