@@ -5,11 +5,16 @@ require 'optparse'
 
 # 引数mを処理
 def parsed_option
+  # 引数mをoptionに格納
   option = ARGV.getopts('m:')['m']
 
+  # 引数mが存在しなければnilを返す
   return nil unless option
+
+  # 引数mが1..12の範囲内であれば、引数mを返す
   return option.to_i if (1..12).include?(option.to_i)
 
+  # 引数mが存在するが、1..12の範囲内でない場合、エラーを表示しプログラム終了
   puts "#{option} is neigher a month number (1..12) nor a name"
   exit
 end
