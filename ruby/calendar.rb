@@ -5,10 +5,10 @@ require 'optparse'
 
 # 引数mを処理
 def parsed_option
-  option = ARGV.getopts('m:')['m']&.to_i
+  option = ARGV.getopts('m:')['m']
 
   return nil unless option
-  return option if option && (1..12).include?(option)
+  return option.to_i if (1..12).include?(option.to_i)
 
   puts "#{option} is neigher a month number (1..12) nor a name"
   exit
@@ -22,7 +22,7 @@ end
 
 # カレンダーの最初の週の空白の個数
 def first_week_space_count(first_date)
-  first_date.wday.zero? ? 6 : first_date.wday - 1
+  first_date.sunday? ? 6 : first_date.wday - 1
 end
 
 # カレンダーの日付を表示
@@ -32,9 +32,9 @@ def output_days(first_date, last_date)
 
   # 初日から最終日までを表示
   (first_date..last_date).each do |date|
-    print "#{date.day.to_s.rjust(2)} "
-    # 日曜日の場合改行
-    print "\n" if date.sunday?
+    print date.day.to_s.rjust(2)
+    # 日曜日の場合改行,それ以外は半角スペース
+    print date.sunday? ? "\n" : ' '
   end
 end
 
