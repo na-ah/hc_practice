@@ -21,7 +21,7 @@ end
 
 # カレンダーの見出しを表示
 def output_calender_header(first_date)
-  puts "#{first_date.strftime('%B %Y').center(21)} "
+  puts "#{first_date.strftime('%B %Y').center(20)} "
   puts 'Mo Tu We Th Fr Sa Su '
 end
 
