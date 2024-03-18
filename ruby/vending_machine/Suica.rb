@@ -12,6 +12,11 @@ class Suica
     @deposit
   end
 
+  def pay(value)
+    raise '残高が足りません' if deposit < value
+    @deposit -= value
+  end
+
   private
 
   def validated_charge_value?(value)
