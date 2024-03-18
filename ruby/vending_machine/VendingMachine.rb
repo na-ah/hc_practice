@@ -11,7 +11,7 @@ class VendingMachine
     ]
   end
 
-  def stock_list
-    "ペプシが#{@stock.count}本あります"
+  def pepsi_stock
+    @stock.count
   end
 end
