@@ -6,6 +6,10 @@ require_relative 'name_service'
 class Player
   include NameService
 
+  def initialize(name)
+    @name = name
+  end
+
   def change_name(new_name)
     if new_name == 'うんこ'
       puts '不適切な名前です'
